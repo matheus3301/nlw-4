@@ -1,8 +1,10 @@
-import express from 'express';
+import 'reflect-metadata';
+import express, { Express } from 'express';
+
 import routes from './routes';
 
 class AppController {
-  express: any;
+  express: Express;
 
   constructor() {
     this.express = express();
